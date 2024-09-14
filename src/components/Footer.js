@@ -4,8 +4,8 @@ import phoneSVG from '../assets/icons/phone.svg'
 
 const Footer = () => {
   return (
-    <div className='w-full'>
-      <div className='container mx-auto p-4 flex justify-center items-center gap-4'>
+    <div className='w-full absolute bottom-0'>
+      <div className='container mx-auto p-4 flex flex-col lg:flex-row justify-center items-center gap-4'>
         <a href='mailto:aliarman.in@gmail.com' className='flex items-center gap-2'>
          <img src={mailSVG} alt="mail" />
          <span>aliarman.in@gmail.com</span>

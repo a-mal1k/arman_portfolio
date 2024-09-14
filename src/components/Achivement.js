@@ -9,7 +9,7 @@ import { Gallery } from 'react-photoswipe-gallery'
 
 const Achivement = () => {
     return(
-        <div className=" rounded-md lg:p-4 bg-orange-100 dark:bg-slate-800">
+        <div className=" rounded-md lg:p-4 bg-stone-100 dark:bg-slate-800">
             <div className="flex flex-wrap">
                 <div className="w-full sm:w-8/12 lg:p-10">
                     <h3 className="font-bold text-xl mb-3 text-slate-700 dark:text-slate-300">Relay Award in Frontend Development</h3>

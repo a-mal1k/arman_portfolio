@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Arman Ali",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "photoswipe": "^5.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.2",
+    "react-photoswipe-gallery": "^3.0.1",
+    "react-router-dom": "^6.22.3"
+  },
+  "browserlist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "postcss": "^8.4.38",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.3"
+  }
+}

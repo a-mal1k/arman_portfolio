@@ -13,6 +13,7 @@
   "author": "Arman Ali",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^10.13.1",
     "parcel": "^2.12.0",
     "photoswipe": "^5.4.3",
     "react": "^18.2.0",

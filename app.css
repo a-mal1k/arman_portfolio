@@ -91,6 +91,12 @@ header.opened span.line-icon:nth-child(4) {
     height: 5px;
 }
 
+* { 
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 section {
     padding-bottom: 100px !important;
 }

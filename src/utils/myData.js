@@ -8,7 +8,9 @@ import demoCert from '../assets/images/certificate_demo.jpg';
 import namasteJS from '../assets/images/certificate_1.png';
 import namasteReact from '../assets/images/certificate_2.png';
 import problemSolvingJS from '../assets/images/certificate_3.png';
-import demoProject from '../assets/images/project_demo.png';
+
+import blogoPedia from '../assets/images/blogoPedia.png';
+import movie from '../assets/images/moovie.png';
 
 import github from '../assets/images/github.png';
 import bootstrap from '../assets/images/bootstrap.svg';
@@ -132,29 +134,57 @@ export const getSkills = [
 export const educationData = [
     {
         id: 0,
-        degree: 'Bachelor of Technology (B.tech - CSE)',
+        degree: 'Bachelor of Technology (B.Tech) in Computer Science & Engineering',
         college: 'United College of Engineering & Research',
         board: 'A.P.J Abdul Kalam Technical University',
-        year_of_passing: '2015-2019',
+        year_of_passing: '2015 - 2019',
         grade: '82.8%',
+        description: 'Graduated with a focus on advanced computing and software development. Achieved a solid academic standing while engaging in various projects and internships related to technology and engineering.'
     },
     {
         id: 1,
-        degree: 'Intermediate',
+        degree: 'Intermediate (12th Grade)',
         college: 'Mahatma Gandhi Inter College',
         board: 'Uttar Pradesh State Board',
         year_of_passing: '2015',
         grade: '81.8%',
+        description: 'Completed intermediate education with a strong foundation in science and mathematics. Prepared for higher education with a solid academic performance.'
     },
     {
         id: 2,
-        degree: 'High School',
+        degree: 'High School (10th Grade)',
         college: 'Gorakhpur Public School',
         board: 'Central Board of Secondary Education',
         year_of_passing: '2013',
-        grade: '87.40%',
+        grade: '87.4%',
+        description: 'Achieved high marks in high school, demonstrating strong analytical and problem-solving skills. This foundation set the stage for future academic and professional success.'
     }
 ]
+
+export const achievementData = [
+    {
+        id: 0,
+        title: 'Team Limelight Award (Manyavar Project)',
+        description: 'Honored with the prestigious Team Limelight Award for exceptional individual and team contributions to the Manyavar Project. This award recognizes outstanding performance, innovation, and leadership in driving project success.',
+        company: 'VML',
+        year: 'Oct 2023',
+    },
+    {
+        id: 1,
+        title: 'Relay Award',
+        description: 'Recipient of the Relay Award for exemplary teamwork and superior performance. This accolade acknowledges significant contributions to team dynamics and project excellence.',
+        company: 'VML',
+        year: 'Nov 2022',
+    },
+    {
+        id: 2,
+        title: 'Star of the Month Award',
+        description: 'Awarded the Star of the Month for exceptional performance and notable achievements recognized by clients. This honor reflects consistent excellence and a commitment to delivering high-impact results.',
+        company: 'VML',
+        year: 'Nov 2022',
+    }
+]
+
 
 export const certificationData = [
     {
@@ -202,17 +232,16 @@ export const certificationData = [
 export const workData = [
     {
         id: 0,
-        designation: 'Developer Frontend',
+        designation: 'Frontend Developer',
         companyName: 'VML',
         location: 'Noida',
         joiningDate: 'December 15, 2021',
-        //lastDate: '',
         currentlyWorking: true,
         summary: [
-            {text: 'Converted Figma designs and prototypes into fully functional, responsive web pages by interpreting and applying design specifications accurately and Collaborated with design teams to ensure accurate implementation and resolve any issues.'},
-            {text: 'Applied various responsive design techniques to ensure cross-browser compatibility and a seamless user experience across different devices, resulting in notably increased site performance and reduced load times, which enhanced overall user experience'},
-            {text: 'Additionally, I worked on Salesforce Commerce  theme design and custom theme development using ACF, Elementor and WooCommerce.'},
-            {text: 'Sending updates to clients regarding work progress via email or Slack, and attending client meetings.'}
+            {text: 'Transformed Figma designs and prototypes into fully functional, responsive web pages, ensuring precise adherence to design specifications. Worked closely with design teams to resolve issues and deliver high-quality implementations.'},
+            {text: 'Implemented responsive design techniques to achieve cross-browser compatibility and a seamless user experience across diverse devices. Enhanced site performance and reduced load times, significantly improving overall user satisfaction.'},
+            {text: 'Engaged in Salesforce Commerce theme design and custom theme development, utilizing ACF, Elementor, and WooCommerce to tailor solutions to client needs and preferences.'},
+            {text: 'Maintained effective communication with clients through regular updates via email and Slack, and actively participated in client meetings to discuss progress and gather feedback.'}
         ]
     },
     {
@@ -224,20 +253,21 @@ export const workData = [
         lastDate: 'December 13, 2021',
         currentlyWorking: false,
         summary: [
-            {text: 'Acquired hands-on experience with HTML, CSS, JavaScript, and React, applying best practices to develop efficient and scalable web applications'},
-            {text: 'Utilized HTML and CSS best practices to create responsive, mobile-first designs, ensuring optimal user experience across various devices and screen sizes'},
-            {text: 'Written and executed test cases for React components to ensure functionality, reliability, and performance, contributing to robust and bug-free applications.'}
+            {text: 'Gained hands-on experience with HTML, CSS, JavaScript, and React, applying industry best practices to develop efficient, scalable web applications that met client specifications and project requirements.'},
+            {text: 'Created responsive, mobile-first designs using HTML and CSS, ensuring optimal user experiences across various devices and screen sizes, contributing to increased user engagement and satisfaction.'},
+            {text: 'Developed and executed comprehensive test cases for React components to verify functionality, reliability, and performance, resulting in robust, bug-free applications and streamlined development processes.'}
         ]
     },
 ]
 
+
 export const unsplashPhotos = [
     {
 		"id":  0,
-		"thumbUrl":  demoProject,
-        "largeSrc": demoProject,
-        "url": '',
-		"title":  "Movie app",
+		"thumbUrl":  movie,
+        "largeSrc": movie,
+        "url": 'https://mooooviee.web.app/',
+		"title":  "Movie app - watch movies",
 		"techStack": [
             {
                 'react': "React Js"
@@ -273,10 +303,10 @@ export const unsplashPhotos = [
 	},
 	{
 		"id":  1,
-		"thumbUrl":  demoProject,
-        "largeSrc": demoProject,
-        "url": '',
-		"title":  "Blog o pedia - not just a blog",
+		"thumbUrl":  blogoPedia,
+        "largeSrc": blogoPedia,
+        "url": 'https://blogoopedia.web.app/',
+		"title":  "Blog-o-pedia - a blogging site",
 		"techStack": [
             {
                 'react': "React Js"

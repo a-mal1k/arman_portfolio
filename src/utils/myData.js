@@ -11,6 +11,7 @@ import problemSolvingJS from '../assets/images/certificate_3.png';
 
 import blogoPedia from '../assets/images/blogoPedia.png';
 import movie from '../assets/images/moovie.png';
+import mstudio from '../assets/images/mstudio.png';
 
 import github from '../assets/images/github.png';
 import bootstrap from '../assets/images/bootstrap.svg';
@@ -322,6 +323,42 @@ export const unsplashPhotos = [
             },
             {
                 'api': 'Twingly API',
+            },
+            {
+                'redux': 'Redux Toolkit',
+            },
+            {
+                'firebase': 'Firebase'
+            },
+            {
+                'parcel': 'Parcel',
+            },
+            {
+                'npm': 'NPM',
+            }
+        ]
+	},
+    {
+		"id":  1,
+		"thumbUrl":  mstudio,
+        "largeSrc": mstudio,
+        "url": 'https://meraclestudio.web.app/',
+		"title":  "Miracle Studio - Ecommerce Site",
+		"techStack": [
+            {
+                'react': "React Js"
+            },
+            {
+                'html': "HTML5"
+            },
+            {
+                'css': "Tailwind Css"
+            },            
+            {
+                'wordpress': 'Parcel'
+            },
+            {
+                'api': 'Firebase API',
             },
             {
                 'redux': 'Redux Toolkit',

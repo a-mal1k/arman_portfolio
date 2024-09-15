@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import LightModeIcon from '../assets/icons/sunicon.svg';
-import DarkModeIcon from '../assets/icons/moon.svg';
 import { useTheme } from '../utils/ThemeContext';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../assets/images/logo_light.svg';
 import LogoDark from '../assets/images/logo_dark.svg'
 import LoadingImg from './LoadingImg';
@@ -19,9 +17,13 @@ const Header = () => {
     const closeMenu = () => {
         setToggleMenu(false);
     }
+    
+    const navLinkClass = ( { isActive }) => `dark:hover:bg-slate-600 hover:bg-stone-300 hover:bg-opacity-25 hover:rounded-lg p-3 hover:shadow-inner dark:text-white text-slate-900 flex justify-center items-center gap-2 text-xl ${isActive ? 'border-b-2 border-b-slate-900 dark:border-b-white' : ''}`;
 
+
+  
     return (
-        <header className={`flex flex-col w-full bg-stone-200 dark:bg-slate-700 shadow-lg sticky top-0 z-50 ${toggleMenu ? 'opened' : ''}`}>
+        <header className={`flex flex-col w-full bg-stone-200 dark:bg-slate-700 shadow-lg border-b- sticky top-0 z-50 ${toggleMenu ? 'opened' : ''}`}>
             <div className="container mx-auto px-4 lg:px-0">
                 <nav className="flex justify-between items-center">
                     <Link to="/" className="logo">
@@ -29,9 +31,9 @@ const Header = () => {
 
                     </Link>
                     <div className="flex justify-end items-center">
-                        <ul className={` grid grid-cols-2 lg:flex nav_menu p-10  lg:flex-row justify-start lg:justify-end lg:items-center gap-y-8 gap-x-8 fixed lg:static  w-full h-auto z-40 lg:z-auto bg-stone-200 dark:bg-slate-900 dark:lg:bg-transparent lg:bg-transparent text-left left-0 lg:p-0 transition-all ${toggleMenu ? 'bottom-0' : 'bottom-[-250px]'} `}>
-                            <li className='hover:bg-slate-600 hover:bg-opacity-25 rounded-lg p-3'>
-                                <Link to="/" className="dark:text-white flex justify-center items-center gap-2  text-slate-900 text-xl"
+                        <ul className={`grid grid-cols-2 lg:flex nav_menu p-10  lg:flex-row justify-start lg:justify-end lg:items-center gap-y-8 gap-x-8 fixed lg:static  w-full h-auto z-40 lg:z-auto bg-stone-200 dark:bg-slate-900 dark:lg:bg-transparent lg:bg-transparent text-left left-0 lg:p-0 transition-all ${toggleMenu ? 'bottom-0' : 'bottom-[-250px]'} `}>
+                            <li>
+                                <NavLink to="/" className={navLinkClass}
                                     onClick={closeMenu}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                         <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
@@ -39,34 +41,34 @@ const Header = () => {
                                     </svg>
 
                                     <span>Home</span>
-                                </Link>
+                                </NavLink>
                             </li>
-                            <li className='hover:bg-slate-600 hover:bg-opacity-25 rounded-lg p-3'>
-                                <Link to="/about" className="dark:text-white flex justify-center items-center gap-2 text-slate-900 text-xl" onClick={closeMenu}>
+                            <li>
+                                <NavLink to="/about" className={navLinkClass} onClick={closeMenu}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                         <path fillRule="evenodd" d="M4.5 3.75a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-15Zm4.125 3a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm-3.873 8.703a4.126 4.126 0 0 1 7.746 0 .75.75 0 0 1-.351.92 7.47 7.47 0 0 1-3.522.877 7.47 7.47 0 0 1-3.522-.877.75.75 0 0 1-.351-.92ZM15 8.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15ZM14.25 12a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15Z" clipRule="evenodd" />
                                     </svg>
 
-                                    <span>About</span></Link>
+                                    <span>About</span></NavLink>
                             </li>
-                            <li className='hover:bg-slate-600 hover:bg-opacity-25 rounded-lg p-3'>
-                                <Link to="/project" className="dark:text-white flex justify-center items-center gap-2 text-slate-900 text-xl" onClick={closeMenu}>
+                            <li>
+                                <NavLink to="/project" className={navLinkClass} onClick={closeMenu}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                         <path fillRule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z" clipRule="evenodd" />
                                         <path fillRule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
                                     </svg>
 
-                                    Projects</Link>
+                                    Projects</NavLink>
                             </li>
-                            <li className='hover:bg-slate-600 hover:bg-opacity-25 rounded-lg p-3'>
-                                <Link to="/work" className="dark:text-white flex justify-center items-center gap-2 text-slate-900 text-xl" onClick={closeMenu}>
+                            <li>
+                                <NavLink to="/work" className={navLinkClass} onClick={closeMenu}>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                         <path fillRule="evenodd" d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clipRule="evenodd" />
                                         <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
                                     </svg>
 
                                     <span>Work</span>
-                                </Link>
+                                </NavLink>
                             </li>
                         </ul>
                         <ul className="flex flex-row justify-end items-start gap-y-3 gap-x-5 ml-6">

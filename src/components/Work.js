@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { workData } from '../utils/myData';
 import WorkExpList from './WorkExpList';
-import KeyboardArrowRightIcon from '../assets/icons/rightarrow.svg';
+
 const Work = () => {
 
     const [workExp, setWorkExp] = useState(0);

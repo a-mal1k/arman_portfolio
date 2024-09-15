@@ -9,6 +9,11 @@ import Projects from './components/Projects';
 import { ThemeProvider } from './utils/ThemeContext';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Footer from './components/Footer';
+import PersonalInfo from './components/PersonalInfo';
+import TechStacks from './components/TechStacks';
+import Certifications from './components/Certifications';
+import { Achievements } from './components/Achievements';
+import Education from './components/Education';
 
 
 const App = () =>{
@@ -33,7 +38,34 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <About/>
+                element: <About/>,
+                children: [
+                    {
+                        path: '/about',
+                        element: <PersonalInfo />
+                    },
+                    {
+                        path: '/about/info',
+                        element: <PersonalInfo />
+                    },
+                    {
+                        path: '/about/skills',
+                        element: <TechStacks />
+                    },
+                    {
+                        path: '/about/education',
+                        element: <Education />
+                    },
+                    {
+                        path: '/about/achievements',
+                        element: <Achievements />
+                    },
+                    {
+                        path: '/about/certifications',
+                        element: <Certifications />
+                    }
+                ],
+                errorElement: <Error />
             },
             {
                 path: '/work',

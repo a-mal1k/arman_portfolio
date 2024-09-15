@@ -5,6 +5,9 @@ import javaScriptLogo from '../assets/images/javascript.png';
 
 import jquery from '../assets/images/jquery.png';
 import demoCert from '../assets/images/certificate_demo.jpg';
+import namasteJS from '../assets/images/certificate_1.png';
+import namasteReact from '../assets/images/certificate_2.png';
+import problemSolvingJS from '../assets/images/certificate_3.png';
 import demoProject from '../assets/images/project_demo.png';
 
 import github from '../assets/images/github.png';
@@ -156,30 +159,43 @@ export const educationData = [
 export const certificationData = [
     {
         id: 0,
-        title: 'Certificate of Completion - Namaste React',
-        issue_by: 'Akshay Saini - NamasteDev.com',
-        issue_date: 'April 2024',
+        title: 'Namaste Frontend System Design',
+        issue_by: 'Chirag Goel, Akshay Saini - NamastDev.com',
+        issue_date: 'In progress...',
+        isCompleted: false,
         src: demoCert,
-        width: '1093',
-        height: '773'
+        width: '1600',
+        height: '1190'
     },
     {
         id: 1,
-        title: 'Namaste JavaScript',
+        title: 'Javascript problem solving',
+        issue_by: 'CodingGame',
+        issue_date: 'July 17, 2024',
+        isCompleted: true,
+        src: problemSolvingJS,
+        width: '1600',
+        height: '1190'
+    },
+    {
+        id: 2,
+        title: 'Certificate of Completion - Namaste React',
         issue_by: 'Akshay Saini - NamasteDev.com',
-        issue_date: 'November, 2023',
-        src: demoCert,
+        issue_date: 'November 2023',
+        src: namasteReact,
+        isCompleted: true,
         width: '1093',
         height: '773'
     },
     {
         id: 2,
-        title: 'Javascript problem solving',
-        issue_by: 'CodingGame',
-        issue_date: 'June 08, 2024',
-        src: demoCert,
-        width: '1600',
-        height: '1190'
+        title: 'Namaste JavaScript',
+        issue_by: 'Akshay Saini - NamasteDev.com',
+        issue_date: 'February, 2023',
+        src: namasteJS,
+        isCompleted: true,
+        width: '1093',
+        height: '773'
     },
 ]
 

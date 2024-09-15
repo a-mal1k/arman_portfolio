@@ -18,7 +18,7 @@ const Home = () => {
     } = personalInfo;
 
     return (
-        <section className="relative z-10 before:content[''] before:bg-stone-100 dark:before:bg-slate-800 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:-z-10 before:rounded-tl-none before:rounded-tr-none before:rounded-bl-full before:rounded-br-none overflow-x-hidden">
+        <section className="relative z-10 bg-stone-100 dark:bg-slate-800">
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-start">
                     <div className='flex flex-col lg:mt-10 lg:pt-5  items-center justify-center  w-full p-0 bg-stone-200 dark:bg-slate-700 lg:bg-transparent dark:lg:bg-transparent'>

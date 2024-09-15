@@ -4,7 +4,7 @@ import { useRouteError, Link } from 'react-router-dom';
 const Error = () => {
     const err = useRouteError();
     return(
-        <section className="relative py-20 before:content[''] before:bg-stone-100 dark:before:bg-slate-800 before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:-z-10 before:rounded-tl-none before:rounded-tr-none before:rounded-bl-full before:rounded-br-none">
+        <section className="relative py-20 bg-stone-100 dark:bg-slate-800">
             <div className="container mx-auto px-4 lg:px-0">
                 <div className="text-center">
                     <h1 className="block">Oops! you have entered an invalid URL</h1>

@@ -90,6 +90,10 @@ header.opened span.line-icon:nth-child(4) {
     width: 5px;
     height: 5px;
 }
+
+section {
+    padding-bottom: 100px !important;
+}
   
 
 ::-webkit-scrollbar-track {

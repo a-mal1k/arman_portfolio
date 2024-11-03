@@ -3,19 +3,19 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import { industryProjectData, advanceProjectData, personalProjectData } from '../../utils/myData';
 
-
 const ProjectGroup = () => {
     const projectData = {
-        industry : industryProjectData,
-        personal : personalProjectData,
-        advance : advanceProjectData
-      };
+        industry: industryProjectData,
+        personal: personalProjectData,
+        advance: advanceProjectData
+    };
     const navLinkClassName = ({ isActive }) =>
         `flex text-sm lg:text-lg items-center justify-center p-2 rounded-lg ${isActive ? 'bg-lime-200 dark:bg-emerald-700' : 'bg-stone-300 dark:bg-slate-600 hover:shadow-inner hover:shadow-green-200'
         }`;
-        const { projectType = 'industry' } = useParams();
-        const data = projectData[projectType];
-    
+    const { projectType = 'industry' } = useParams();
+    const data = projectData[projectType];
+
+
     return (
         <section className="relative py-10 z-10 bg-stone-100 dark:bg-slate-800 bg-">
             <div className="container mx-auto px-4 lg:px-0">
@@ -28,9 +28,9 @@ const ProjectGroup = () => {
                     <div className="container mx-auto px-4 lg:px-0">
                         <div className="flex flex-col justify-between items-start">
                             <div className="flex flex-col w-full rounded-md lg:p-5">
-                                <h1 className="text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
+                                <h2 data-aos="fade-left" className="text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
                                     <span className='capitalize'>{projectType} Projects</span>
-                                </h1>
+                                </h2>
                                 <div className="rounded-md">
                                     <ul className="flex justify-start items-stretch flex-wrap -m-4">
                                         <Outlet context={{ data }} />

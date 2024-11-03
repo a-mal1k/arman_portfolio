@@ -5,7 +5,7 @@ const Projects = () => {
     const { data } = useOutletContext();
     return <>
         {data.map((project, index) => (
-            <li key={index} className="w-full md:w-1/2 lg:w-1/3 rounded-md p-4 grid-full">
+            <li key={index} className="w-full md:w-1/2 lg:w-1/3 rounded-md p-4 grid-full" data-aos="zoom-in">
                 <span className="cursor-pointer w-full h-[250px] relative block">
                     <LoadingImg className="image-card aspect-square w-full object-cover h-[250px] block" src={project.thumbUrl} />
                 </span>

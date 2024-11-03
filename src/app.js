@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -15,9 +15,17 @@ import Certifications from './components/Certifications';
 import { Achievements } from './components/Achievements';
 import Education from './components/Education';
 import ProjectGroup from './components/projects/ProjectGroup';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
 
     return(
         <ThemeProvider>

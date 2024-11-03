@@ -4,7 +4,7 @@ import TechStack from './TechStack';
 const TechStacks = () => {
     return (
         <div className="flex flex-col w-full mt-10 rounded-md lg:p-5">
-            <h1 className="text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
+            <h1  data-aos="fade-left" className="text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
                 <span>Tech Stack</span>
             </h1>
             <div className="rounded-md">

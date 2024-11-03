@@ -12,25 +12,25 @@ const PersonalDetails = ({ title, number }) => {
 
     return (
         <ul className="flex justify-start items-start flex-wrap">
-            <li className="mb-5 w-full sm:w-6/12 lg:w-6/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-6/12" data-aos="fade-left">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">Email Id</span>
-                <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
+                <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0" >
                     <Link to="mailto:aliarman.in@gmail.com">aliarman.in@gmail.com</Link>
                 </h2>
             </li>
-            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12" data-aos="fade-left" data-aos-delay="100">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">Phone No</span>
                 <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
                     <Link to="tel:+919899732743">9899732743</Link>
                 </h2>
             </li>
-            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12" data-aos="fade-left" data-aos-delay="200">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">Gender</span>
                 <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
                     Male
                 </h2>
             </li>
-            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12" data-aos="fade-left" data-aos-delay="300">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">LinkedIn Profile</span>
                 <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
                     <Link to="https://in.linkedin.com/in/arman-al1" target="_blank"><svg
@@ -46,7 +46,7 @@ const PersonalDetails = ({ title, number }) => {
                     </svg></Link>
                 </h2>
             </li>
-            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12" data-aos="fade-left" data-aos-delay="400">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">Github Profile</span>
                 <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
                     <Link to={html_url} target="_blank"><svg
@@ -62,13 +62,13 @@ const PersonalDetails = ({ title, number }) => {
                     </svg></Link>
                 </h2>
             </li>
-            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12" data-aos="fade-left" data-aos-delay="500">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">Current Company</span>
                 <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
                     {company}
                 </h2>
             </li>
-            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12">
+            <li className="mb-5 w-full sm:w-6/12 lg:w-3/12" data-aos="fade-left" data-aos-delay="600">
                 <span className="font-medium text-slate-700 dark:text-slate-300 relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 dark:after:bg-slate-600 after:w-5 after:h-5 after:rounded-full after:-z-10">Location</span>
                 <h2 className="text-stone-950 dark:text-slate-300 font-bold text-xl mt-0">
                     {location}

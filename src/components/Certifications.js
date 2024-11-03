@@ -5,7 +5,7 @@ import Certification from './Certification';
 const Certifications = () => {
     return (
         <div className="flex flex-col w-full mt-10 rounded-md lg:p-5">
-            <h2 className="text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
+            <h2 data-aos="fade-left" className="text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
                 <span>Certifications</span>
             </h2>
             <div className="rounded-md">

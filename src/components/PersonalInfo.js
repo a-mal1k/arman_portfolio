@@ -22,7 +22,7 @@ const PersonalInfo = () => {
     } = personalInfo;
     return (
         <div className='flex flex-col lg:flex-row justify-between items-start'>
-            <aside className="flex flex-col w-full lg:w-3/12 mt-10 border border-gray-300 dark:border-slate-700 p-5">
+            <aside className="flex flex-col w-full lg:w-3/12 mt-10 border border-gray-300 dark:border-slate-700 p-5" data-aos="flip-up">
                 <div className="flex flex-col justify-center items-center rounded-full ">
                     {avatar_url ?  <LoadingImg src={avatar_url} alt={name} className="dark:bg-stone-50 min-h-52 bg-slate-300 rounded-full aspect-square object-cover shadow-2xl w-[200px] lg:w-auto" />: <div className='w-[200px] min-h-52 flex items-center justify-center'><div className="loader"></div></div>}
                    
@@ -114,8 +114,8 @@ const PersonalInfo = () => {
             </aside>
             <div className="flex flex-col w-full lg:w-9/12 mt-4 rounded-md lg:p-5">
                 
-                <h2 className="text-2xl font-bold leading-10 text-slate-700 dark:text-stone-50 mb-4">{name}</h2>
-                <p className='font-normal mb-5 text-stone-900 dark:text-slate-300'>I am employed full-time as a Frontend Developer at VML, with 4.2 years of experience in Frontend Technologies including HTML5, CSS3, JavaScript, React JS, Redux Toolkit, Bootstrap, Tailwind and proficiency in build tools like Parcel, webpack and version control systems like GitHub, Gitlab, AWS Codecommits. As a quick and focused learner, I actively seek opportunities to enhance my skills, ensuring high-quality work and readiness to undertake additional responsibilities.</p>
+                <h2 className="text-2xl font-bold leading-10 text-slate-700 dark:text-stone-50 mb-4" data-aos="fade-left">{name}</h2>
+                <p data-aos="fade-left" data-aos-delay="200" className='font-normal mb-5 text-stone-900 dark:text-slate-300'>I am employed full-time as a Frontend Developer at VML, with 4.2 years of experience in Frontend Technologies including HTML5, CSS3, JavaScript, React JS, Redux Toolkit, Bootstrap, Tailwind and proficiency in build tools like Parcel, webpack and version control systems like GitHub, Gitlab, AWS Codecommits. As a quick and focused learner, I actively seek opportunities to enhance my skills, ensuring high-quality work and readiness to undertake additional responsibilities.</p>
                 <div className="border border-slate-300 rounded-md p-4">
                     <PersonalDetails />
                 </div>

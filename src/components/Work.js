@@ -33,8 +33,8 @@ const Work = () => {
                 <div className="flex justify-between items-start">
                     <div className="flex flex-col w-full lg:mt-10 rounded-md lg:p-5">
                         <h1 className="flex justify-between flex-col gap-3  lg:flex-row items-start lg:items-center text-4xl font-bold leading-10 text-stone-950 dark:text-stone-50 mb-16">
-                            <span>Work History</span>
-                            <span className="font-medium text-xl lg:text-3xl relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 after:w-5 after:h-5 after:rounded-full after:-z-10">{workExp} Years</span>
+                            <span data-aos="fade-left">Work History</span>
+                            <span data-aos="fade-left" data-aos-delay="200" className="font-medium text-xl lg:text-3xl relative z-10 after:content-[''] after:absolute after:-top-2 after:-right-2 after:bg-stone-200 after:w-5 after:h-5 after:rounded-full after:-z-10">{workExp} Years</span>
                         </h1>
                         <ul className="border-l border-stone-600 dark:border-slate-700">
                             {workData.map((listData) => (

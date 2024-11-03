@@ -5,7 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Error from './components/Error';
 import Work from './components/Work';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 import { ThemeProvider } from './utils/ThemeContext';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Footer from './components/Footer';
@@ -14,9 +14,10 @@ import TechStacks from './components/TechStacks';
 import Certifications from './components/Certifications';
 import { Achievements } from './components/Achievements';
 import Education from './components/Education';
+import ProjectGroup from './components/projects/ProjectGroup';
 
 
-const App = () =>{
+const App = () => {
 
     return(
         <ThemeProvider>
@@ -38,42 +39,53 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <About/>,
+                element: <About />,
                 children: [
-                    {
-                        path: '/about',
-                        element: <PersonalInfo />
-                    },
-                    {
-                        path: '/about/info',
-                        element: <PersonalInfo />
-                    },
-                    {
-                        path: '/about/skills',
-                        element: <TechStacks />
-                    },
-                    {
-                        path: '/about/education',
-                        element: <Education />
-                    },
-                    {
-                        path: '/about/achievements',
-                        element: <Achievements />
-                    },
-                    {
-                        path: '/about/certifications',
-                        element: <Certifications />
-                    }
+                  {
+                    index: true,
+                    element: <PersonalInfo />
+                  },
+                  {
+                    path: 'info',
+                    element: <PersonalInfo />
+                  },
+                  {
+                    path: 'skills',
+                    element: <TechStacks />
+                  },
+                  {
+                    path: 'education',
+                    element: <Education />
+                  },
+                  {
+                    path: 'achievements',
+                    element: <Achievements />
+                  },
+                  {
+                    path: 'certifications',
+                    element: <Certifications />
+                  }
                 ],
                 errorElement: <Error />
             },
+              
             {
                 path: '/work',
-                element: <Work/>
+                element: <Work/>,
             },
             {
-                path: '/project',
-                element: <Projects/>
+                path: '/projects',
+                element: <ProjectGroup/>,
+                children: [
+                    {
+                      index: true,
+                      element: <Projects />
+                    },
+                    {
+                        path: ':projectType',
+                        element: <Projects />
+                    },
+                ]
             }
         ],
         errorElement: <Error/>,

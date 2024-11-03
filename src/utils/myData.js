@@ -7,11 +7,23 @@ import jquery from '../assets/images/jquery.png';
 import demoCert from '../assets/images/certificate_demo.jpg';
 import namasteJS from '../assets/images/certificate_1.png';
 import namasteReact from '../assets/images/certificate_2.png';
+import namasteFSD from '../assets/images/namaste_fsd.webp';
+import namasteFI from '../assets/images/namaste_fi.webp';
 import problemSolvingJS from '../assets/images/certificate_3.png';
 
 import blogoPedia from '../assets/images/blogoPedia.png';
 import movie from '../assets/images/moovie.png';
 import mstudio from '../assets/images/mstudio.png';
+
+import manyavar from '../assets/images/projects/project_manyavar.png'
+import twamev from '../assets/images/projects/project_twamev.png'
+import diwas from '../assets/images/projects/project_diwas.png'
+import biba from '../assets/images/projects/project_biba.png'
+import mahindra from '../assets/images/projects/project_mahindra.png'
+import inprogress from '../assets/images/projects/inprogress_web.jpg';
+import kfc from '../assets/images/projects/project_kfc.png';
+import bodyshop from '../assets/images/projects/project_bodyshop.png';
+import pureit from '../assets/images/projects/project_pureit.png';
 
 import github from '../assets/images/github.png';
 import bootstrap from '../assets/images/bootstrap.svg';
@@ -194,7 +206,7 @@ export const certificationData = [
         issue_by: 'Chirag Goel, Akshay Saini - NamastDev.com',
         issue_date: 'In progress...',
         isCompleted: false,
-        src: demoCert,
+        src: namasteFSD,
         width: '1600',
         height: '1190'
     },
@@ -219,11 +231,21 @@ export const certificationData = [
         height: '773'
     },
     {
-        id: 2,
+        id: 3,
         title: 'Namaste JavaScript',
         issue_by: 'Akshay Saini - NamasteDev.com',
         issue_date: 'February, 2023',
         src: namasteJS,
+        isCompleted: true,
+        width: '1093',
+        height: '773'
+    },
+
+    {
+        id: 4,
+        title: 'Namaste Frontend Interview',
+        issue_by: 'Akshay Saini - NamasteDev.com',
+        src: namasteFI,
         isCompleted: true,
         width: '1093',
         height: '773'
@@ -262,7 +284,7 @@ export const workData = [
 ]
 
 
-export const unsplashPhotos = [
+export const personalProjectData = [
     {
 		"id":  0,
 		"thumbUrl":  movie,
@@ -372,6 +394,246 @@ export const unsplashPhotos = [
             {
                 'npm': 'NPM',
             }
+        ]
+	},
+]
+
+export const industryProjectData = [
+    {
+		"id":  0,
+		"thumbUrl":  mahindra,
+        "largeSrc": mahindra,
+        "url": 'https://auto.mahindra.com/',
+		"title":  "Auto Mahindra",
+		"techStack": [
+            {
+                'framework': "SFCC"
+            },
+            {
+                'html': "ISML, HTML"
+            },
+            {
+                'css': "Bootstrap, SCSS"
+            },            
+
+            {
+                'js': 'JS, jQuery',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  1,
+		"thumbUrl":  twamev,
+        "largeSrc": twamev,
+        "url": 'https://www.twamev.com/en-in/home',
+		"title":  "Twamev - A premium brand",
+		"techStack": [
+            {
+                'framework': "SFCC"
+            },
+            {
+                'html': "ISML, HTML"
+            },
+            {
+                'css': "Bootstrap, SCSS"
+            },            
+
+            {
+                'js': 'JS, jQuery',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  2,
+		"thumbUrl":  manyavar,
+        "largeSrc": manyavar,
+        "url": 'https://www.manyavar.com/en-in/home',
+		"title":  "Manyavar & Mohey",
+		"techStack": [
+            {
+                'framework': "SFCC"
+            },
+            {
+                'html': "ISML, HTML"
+            },
+            {
+                'css': "Bootstrap, SCSS"
+            },            
+
+            {
+                'js': 'JS, jQuery',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  3,
+		"thumbUrl":  diwas,
+        "largeSrc": diwas,
+        "url": 'https://diwas.manyavar.com/',
+		"title":  "Diwas by Manyavar",
+		"techStack": [
+            {
+                'framework': "SFCC"
+            },
+            {
+                'html': "ISML, HTML"
+            },
+            {
+                'css': "Bootstrap, SCSS"
+            },            
+
+            {
+                'js': 'JS, jQuery',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  4,
+		"thumbUrl":  biba,
+        "largeSrc": biba,
+        "url": 'https://www.biba.in/',
+		"title":  "Biba - for women an girls",
+		"techStack": [
+            {
+                'framework': "SFCC"
+            },
+            {
+                'html': "ISML, HTML"
+            },
+            {
+                'css': "Bootstrap, SCSS"
+            },            
+
+            {
+                'js': 'JS, jQuery',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  5,
+		"thumbUrl":  kfc,
+        "largeSrc": kfc,
+        "url": 'https://kfc.com.my/',
+		"title":  "KFC - Malaysia",
+		"techStack": [
+            {
+                'framework': "Magento PWA"
+            },
+            {
+                'html': "HTML"
+            },
+            {
+                'css': "Tailwind, SCSS"
+            },            
+
+            {
+                'js': 'JS, React, Redux',
+            },
+            {
+                'api': 'graphQL',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  6,
+		"thumbUrl":  bodyshop,
+        "largeSrc": bodyshop,
+        "url": 'https://www.thebodyshop.co.id/',
+		"title":  "The BodyShop - Indonesia",
+		"techStack": [
+            {
+                'framework': "Magento PWA"
+            },
+            {
+                'html': "HTML"
+            },
+            {
+                'css': "Tailwind, SCSS"
+            },            
+
+            {
+                'js': 'JS, React, Redux',
+            },
+            {
+                'api': 'graphQL',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  7,
+		"thumbUrl":  pureit,
+        "largeSrc": pureit,
+        "url": 'https://www.pureitwater.com/',
+		"title":  "Pureit - India",
+		"techStack": [
+            {
+                'framework': "Magento PWA"
+            },
+            {
+                'html': "HTML"
+            },
+            {
+                'css': "Tailwind, SCSS"
+            },            
+
+            {
+                'js': 'JS, React, Redux',
+            },
+            {
+                'api': 'graphQL',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+]
+
+export const advanceProjectData = [
+    {
+		"id":  0,
+		"thumbUrl":  inprogress,
+        "largeSrc": inprogress,
+        "url": '#',
+		"title":  "Netflix - chatGPT Search",
+		"techStack": [
+            {
+                'framework': "React, Redux"
+            },
+            {
+                'html': "JSX"
+            },
+            {
+                'css': "Tailwind"
+            },            
+
+            {
+                'api': 'Firebase, chatGPT',
+            },
+            {
+                'bundler': 'parcel',
+            },
         ]
 	},
 ]

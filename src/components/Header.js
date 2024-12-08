@@ -23,7 +23,7 @@ const Header = () => {
 
   
     return (
-        <header className={`flex flex-col w-full bg-stone-200 dark:bg-slate-700 shadow-lg border-b- sticky top-0 z-50 ${toggleMenu ? 'opened' : ''}`}>
+        <header className={`flex flex-col w-full bg-stone-200 dark:bg-slate-700 shadow-lg border-b- fixed top-0 z-50 ${toggleMenu ? 'opened' : ''}`}>
             <div className="container mx-auto px-4 lg:px-0">
                 <nav className="flex justify-between items-center">
                     <Link to="/" className="logo">

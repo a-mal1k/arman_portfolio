@@ -20,6 +20,7 @@ import twamev from '../assets/images/projects/project_twamev.png'
 import diwas from '../assets/images/projects/project_diwas.png'
 import biba from '../assets/images/projects/project_biba.png'
 import mahindra from '../assets/images/projects/project_mahindra.png'
+import mahindraE from '../assets/images/projects/project_mahindraE.png'
 import inprogress from '../assets/images/projects/inprogress_web.jpg';
 import kfc from '../assets/images/projects/project_kfc.png';
 import bodyshop from '../assets/images/projects/project_bodyshop.png';
@@ -29,6 +30,8 @@ import github from '../assets/images/github.png';
 import bootstrap from '../assets/images/bootstrap.svg';
 import tailwindCSS from '../assets/images/tailwind.png';
 import sass from '../assets/images/sass.png';
+import logoTs from '../assets/images/logo_ts.png';
+import sfcc_logo from '../assets/images/logo_sfcc.jpeg';
 
 import chatgpt from '../assets/images/chatgpt.png';
 import redux from '../assets/images/redux-icon.webp';
@@ -45,6 +48,12 @@ export const getSkills = [
         },
         {
             id: 1,
+            name: 'JSX',
+            src: htmlLogo,
+            experience: '3 years'
+        },
+        {
+            id: 2,
             name: 'CSS3',
             src: cssLogo,
             experience: '4 years'
@@ -68,81 +77,100 @@ export const getSkills = [
             experience: '4 years'
         },
         {
-            id: 11,
-            name: 'React Js',
+            id: 6,
+            name: 'React.js',
             src: reactjs,
             experience: '3 years'
         },
         {
-            id: 17,
+            id: 7,
             name: 'Redux Toolkit',
             src: redux,
             experience: '2 years'
         },
         {
-            id: 18,
+            id: 8,
             name: 'Parcel',
             src: parceljs,
-            experience: '1 years'
+            experience: '1 year'
         },
         {
-            id: 15,
+            id: 9,
             name: 'Git',
             src: github,
             experience: '4 years'
         },
         {
-            id: 6,
+            id: 10,
             name: 'SASS',
             src: sass,
             experience: '3 years'
         },
         {
-            id: 10,
+            id: 11,
             name: 'jQuery',
             src: jquery,
             experience: '3 years'
         },
-        
         {
-            id: 16,
-            name: 'Prompt',
+            id: 12,
+            name: 'SFCC',
+            src: sfcc_logo,
+            experience: '2 years'
+        },
+        {
+            id: 13,
+            name: 'AI Tools',
             src: chatgpt,
-            experience: '1 years'
-        }
-        
+            experience: '2 years'
+        },
+        {
+            id: 14,
+            name: 'TypeScript',
+            src: logoTs,
+            experience: '1 year'
+        },
     ],
     [
         {
             id: 0,
-            name: 'Time management'
+            name: 'Efficient Time Management'
         },
         {
             id: 1,
-            name: 'Interpersonal'
+            name: 'Strong Interpersonal Skills'
         },
         {
             id: 2,
-            name: 'Quick learner'
+            name: 'Adaptable and Quick Learner'
         },
         {
             id: 3,
-            name: 'Communication'
+            name: 'Effective Communication'
         },
         {
             id: 4,
-            name: 'Teamwork'
+            name: 'Team Collaboration'
         },
         {
             id: 5,
-            name: 'Leadership'
+            name: 'Leadership Abilities'
         },
         {
             id: 6,
-            name: 'Problem solving'
+            name: 'Critical Thinking and Problem Solving'
         },
-    ]    
+        {
+            id: 7,
+            name: 'Attention to Detail'
+        },
+        {
+            id: 8,
+            name: 'Creativity and Innovation'
+        }
+    ]
 ];
+
 
 export const educationData = [
     {
@@ -401,6 +429,31 @@ export const personalProjectData = [
 export const industryProjectData = [
     {
 		"id":  0,
+		"thumbUrl":  mahindraE,
+        "largeSrc": mahindraE,
+        "url": 'https://www.mahindraelectricsuv.com/',
+		"title":  "Mahindra Electric",
+		"techStack": [
+            {
+                'framework': "SFCC"
+            },
+            {
+                'html': "ISML, HTML"
+            },
+            {
+                'css': "Bootstrap, SCSS, animate"
+            },            
+
+            {
+                'js': 'JS, jQuery',
+            },
+            {
+                'bundler': 'webpack',
+            },
+        ]
+	},
+    {
+		"id":  1,
 		"thumbUrl":  mahindra,
         "largeSrc": mahindra,
         "url": 'https://auto.mahindra.com/',
@@ -425,7 +478,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  1,
+		"id":  2,
 		"thumbUrl":  twamev,
         "largeSrc": twamev,
         "url": 'https://www.twamev.com/en-in/home',
@@ -450,7 +503,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  2,
+		"id":  3,
 		"thumbUrl":  manyavar,
         "largeSrc": manyavar,
         "url": 'https://www.manyavar.com/en-in/home',
@@ -475,7 +528,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  3,
+		"id":  4,
 		"thumbUrl":  diwas,
         "largeSrc": diwas,
         "url": 'https://diwas.manyavar.com/',
@@ -500,7 +553,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  4,
+		"id":  5,
 		"thumbUrl":  biba,
         "largeSrc": biba,
         "url": 'https://www.biba.in/',
@@ -525,7 +578,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  5,
+		"id":  6,
 		"thumbUrl":  kfc,
         "largeSrc": kfc,
         "url": 'https://kfc.com.my/',
@@ -553,7 +606,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  6,
+		"id":  7,
 		"thumbUrl":  bodyshop,
         "largeSrc": bodyshop,
         "url": 'https://www.thebodyshop.co.id/',
@@ -581,7 +634,7 @@ export const industryProjectData = [
         ]
 	},
     {
-		"id":  7,
+		"id":  8,
 		"thumbUrl":  pureit,
         "largeSrc": pureit,
         "url": 'https://www.pureitwater.com/',

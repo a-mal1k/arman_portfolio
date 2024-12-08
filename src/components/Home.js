@@ -21,10 +21,10 @@ const Home = () => {
         <section className="relative z-10 bg-stone-100 dark:bg-slate-800">
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row justify-between items-start">
-                    <div className='flex flex-col lg:mt-10 lg:pt-5  items-center justify-center  w-full p-0 bg-stone-200 dark:bg-slate-700 lg:bg-transparent dark:lg:bg-transparent'>
+                    <div className='flex-1 flex flex-col lg:mt-10 lg:pt-5  items-center justify-center  w-full p-0 bg-stone-200 dark:bg-slate-700 lg:bg-transparent dark:lg:bg-transparent'>
                         <img data-aos="zoom-in" src={isDarkMode ? UserImg : UserImgDark} alt="Arman Ali" className="max-w-80 lg:max-w-full lg:rounded-full" />
                     </div>
-                    <div className="flex px-4 lg:px-0 flex-col w-full lg:w-8/12 mt-10 rounded-md lg:p-5 pt-0 lg:pl-14">
+                    <div className=" flex-1 flex px-4 lg:px-0 flex-col w-full lg:w-8/12 mt-10 rounded-md lg:p-5 pt-0 lg:pl-14">
                         <h1 data-aos="zoom-in-down" className="text-4xl font-bold leading-10 text-slate-700 dark:text-stone-50 mb-4">{name}</h1>
                         <p data-aos="fade-left" data-aos-delay="100"  className="my-4 text-slate-500 dark:text-slate-300 font-normal">{bio}</p>
                         <ul className="flex flex-col mt-3 ">

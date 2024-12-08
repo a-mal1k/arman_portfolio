@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { workData } from '../utils/myData';
 import WorkExpList from './WorkExpList';
 
@@ -38,8 +38,8 @@ const Work = () => {
                         </h1>
                         <ul className="border-l border-stone-600 dark:border-slate-700">
                             {workData.map((listData) => (
-
-                                <WorkExpList key={listData.id} designation={listData.designation} companyName={listData.companyName} summary={listData.summary.map((item) => (<span className='block w-full mb-3 relative'><svg
+                                <Fragment key={listData.id}>
+                                <WorkExpList designation={listData.designation} companyName={listData.companyName} summary={listData.summary.map((item) => (<span className='block w-full mb-3 relative'><svg
                                     width="20px"
                                     height="20px"
                                     version="1.1"
@@ -55,6 +55,7 @@ const Work = () => {
                                         />
                                     </g>
                                 </svg>{item?.text}</span>))} joiningDate={listData.joiningDate} lastWorkingDate={listData.lastDate} currentlyWorking={listData.currentlyWorking} />
+                                </Fragment>
                             ))}
                         </ul>
                     </div>

@@ -5,7 +5,7 @@ function starEffect() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const starCount = 10;
+    const starCount = 20;
     const stars = [];
 
     for (let i = 0; i < starCount; i++) {

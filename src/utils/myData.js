@@ -13,6 +13,7 @@ import problemSolvingJS from '../assets/images/certificate_3.png';
 
 import blogoPedia from '../assets/images/blogoPedia.png';
 import movie from '../assets/images/moovie.png';
+import trailer from '../assets/images/popcorn.png';
 import mstudio from '../assets/images/mstudio.png';
 
 import manyavar from '../assets/images/projects/project_manyavar.png'
@@ -315,6 +316,45 @@ export const workData = [
 export const personalProjectData = [
     {
 		"id":  0,
+		"thumbUrl":  trailer,
+        "largeSrc": trailer,
+        "url": 'https://friendsofpopcorn.web.app/',
+		"title":  "Friends of Popcorn - Trailers",
+		"techStack": [
+            {
+                'react': "React Js, Typescript"
+            },
+            {
+                'html': "HTML5"
+            },
+            {
+                'css': "Tailwind Css"
+            },            
+            {
+                'api': 'TMDB API',
+            },
+            {
+                'api': 'Firebase API',
+            },
+            {
+                'api': 'Github API',
+            },
+            {
+                'redux': 'Redux Toolkit',
+            },
+            {
+                'firebase': 'Firebase'
+            },
+            {
+                'parcel': 'Parcel',
+            },
+            {
+                'npm': 'NPM',
+            }
+        ]
+	},
+    {
+		"id":  1,
 		"thumbUrl":  movie,
         "largeSrc": movie,
         "url": 'https://mooooviee.web.app/',
@@ -353,7 +393,7 @@ export const personalProjectData = [
         ]
 	},
 	{
-		"id":  1,
+		"id":  2,
 		"thumbUrl":  blogoPedia,
         "largeSrc": blogoPedia,
         "url": 'https://blogoopedia.web.app/',
@@ -389,7 +429,7 @@ export const personalProjectData = [
         ]
 	},
     {
-		"id":  1,
+		"id":  3,
 		"thumbUrl":  mstudio,
         "largeSrc": mstudio,
         "url": 'https://meraclestudio.web.app/',
